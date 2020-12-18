@@ -1,1 +1,1 @@
-firefox;firefox/install.py
+firefox;firefox/setup.py
