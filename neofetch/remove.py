@@ -1,5 +1,5 @@
 import shutil,os
-print(">< Deleting Firefox...")
+print(">< Deleting Neofetch...")
 shutil.rmtree(os.getenv('HOME') + '/.local/bin/dylanaraps-neofetch-60d07de')
 print(">< Removing from path")
 #with open(os.getenv('HOME') + '/.profile', ):
