@@ -1,4 +1,4 @@
-import subprocess,requests,tarfile,os,shutil
+import subprocess,requests,zipfile,os,shutil
 dlurl = 'https://api.github.com/repos/dylanaraps/neofetch/zipball/7.1.0'
 print(">< Downloading Neofetch...")
 file = requests.get(dlurl)
