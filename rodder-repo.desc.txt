@@ -1,1 +1,2 @@
 firefox;firefox/setup.py;firefox/remove.py
+neofetch;neofetch/setup.py;firefox/remove.py
