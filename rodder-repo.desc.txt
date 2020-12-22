@@ -1,3 +1,4 @@
 firefox;firefox/setup.py;firefox/remove.py
 neofetch;neofetch/setup.py;neofetch/remove.py
 rodder;rodder/setup.py;rodder/cannotremove.py
+micro;micro/setup.py;micro/remove.py
