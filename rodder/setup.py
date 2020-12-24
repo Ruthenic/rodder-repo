@@ -1,4 +1,11 @@
 import subprocess,os,shutil
+isAURINSTALL = str(subprocess.check_output('which rodder', shell=True)).replace("b'", "").replace("\\n'", "")
+if isAURINSTALL == '/usr/bin/rodder':
+    print("WARNING: DO NOT USE IF INSTALLED VIA AUR UNLESS YOU REALLY LIKE BREAKING THINGS!")
+    wantsInstall = input("Are you sure you want to update rodder? [y/N] ")
+    if wantsInstall.lower() == 'n' or wantsInstall.lower() == '':
+        exit()
+    print("aight fine you fuckup your install") #todo here: allow user to convert AUR install to local install? (note: may fuck things up even more)
 print(">< Checking for old install...")
 if os.path.exists(os.getenv('HOME') + '/.config/rodder') == True or os.path.exists(os.getenv('HOME') + '/.local/rodder') == True:
     isDeleteOldInstall = 'y'
