@@ -3,3 +3,4 @@ neofetch;neofetch/setup.py;neofetch/remove.py
 rodder;rodder/setup.py;rodder/cannotremove.py
 micro;micro/setup.py;micro/remove.py
 ytcd;ytcd/setup.py;ytcd/remove.py
+rodder-gui;rodder-gui/setup.py;rodder-gui/remove.py
