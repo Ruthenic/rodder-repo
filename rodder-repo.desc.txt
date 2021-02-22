@@ -1,6 +1,6 @@
-firefox;firefox/setup.py;firefox/remove.py
-neofetch;neofetch/setup.py;neofetch/remove.py
-rodder;rodder/setup.py;rodder/cannotremove.py
-micro;micro/setup.py;micro/remove.py
-ytcd;ytcd/setup.py;ytcd/remove.py
-rodder-gui;rodder-gui/setup.py;rodder-gui/remove.py
+firefox;firefox/setup.py;firefox/remove.py;firefox/metadata.txt
+neofetch;neofetch/setup.py;neofetch/remove.py;neofetch/metadata.txt
+rodder;rodder/setup.py;rodder/cannotremove.py;neofetch/metadata.txt
+micro;micro/setup.py;micro/remove.py;micro/metadata.txt
+ytcd;ytcd/setup.py;ytcd/remove.py;ytcd/metadata.txt
+rodder-gui;rodder-gui/setup.py;rodder-gui/remove.py;rodder-gui/metadata.txt
