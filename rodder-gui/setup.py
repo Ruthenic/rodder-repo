@@ -10,8 +10,8 @@ with zipfile.ZipFile(os.getenv('HOME') + '/.tmp/rodder/rodder-gui-master.zip', '
 print(">< Moving rodder-gui to installation dir...")
 shutil.move(os.getenv('HOME') + '/.tmp/rodder/rodder-gui-master', os.getenv('HOME') + '/.local/bin')
 print(">< Adding rodder-gui dir to $PATH")
-with open(os.getenv('HOME') + '/.profile', 'a') as f:
-    f.write('export PATH=' + os.getenv('HOME') + '/.local/bin/$EXTRACTED_FOLDER_NAME:$PATH #Created by rodder')
+with open(os.getenv('HOME') + '/.bashrc', 'a') as f:
+    f.write('export PATH=' + os.getenv('HOME') + '/.local/bin/rodder-gui-master:$PATH #Created by rodder')
 if 'fish' in subprocess.run('echo "$SHELL"', shell=True, capture_output=True).stdout.decode('utf-8').strip():
     subprocess.run('/usr/bin/fish -c "set -Ua fish_user_paths {}/.local/bin/rodder-gui-master"'.format(os.getenv('HOME')), shell=True)
 print(">< Making rodder-gui executable...")
